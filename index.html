@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Birthday Card</title>
+</head>
+<body>
+  <div class="card-container">
+    <h1 class="card-title">🎉 Happy Birthday!</h1>
+    <p class="card-message">Wishing you joy, laughter, and lots of cake! 🎂</p>
+    <button class="card-button" id="openGiftBtn">Open Gift</button>
+  </div>
+
+  <!-- Popup -->
+  <div class="popup-overlay" id="popupOverlay">
+    <div class="popup">
+      <button class="close-btn" id="closePopupBtn">❌</button>
+      <p>🎁 Here’s your surprise: You’re amazing! 🌟</p>
+    </div>
+  </div>
+
+  <script>
+    const openGiftBtn = document.getElementById('openGiftBtn');
+    const popupOverlay = document.getElementById('popupOverlay');
+    const closePopupBtn = document.getElementById('closePopupBtn');
+
+    openGiftBtn.addEventListener('click', () => {
+      popupOverlay.classList.add('show');
+    });
+
+    closePopupBtn.addEventListener('click', () => {
+      popupOverlay.classList.remove('show');
+    });
+
+    popupOverlay.addEventListener('click', (e) => {
+      if (e.target === popupOverlay) {
+        popupOverlay.classList.remove('show');
+      }
+    });
+  </script>
+</body>
+</html>
