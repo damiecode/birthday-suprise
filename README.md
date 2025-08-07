@@ -124,8 +124,3 @@ This project was designed for learners who are:
 Let’s build the web, one click at a time 💻✨
 
 ```
-
----
-
-Let me know if you want the project files (`index.html`, `styles.css`, and animation JS) bundled with this in a ZIP or GitHub structure.
-```
