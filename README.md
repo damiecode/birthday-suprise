@@ -122,5 +122,3 @@ This project was designed for learners who are:
 * Learning how web development + animation come together
 
 Let’s build the web, one click at a time 💻✨
-
-```
